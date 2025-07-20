@@ -1,0 +1,348 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Add this before the closing </body> tag -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MyWebNest</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {% comment %} home section {% endcomment %}
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+      <h1 class="hero-title">
+        Hello, I'am <br />
+        Swarnika Singh
+      </h1>
+      <p class="tech-summary">
+        I have hands-on experience building full-stack applications and <br />
+        currently enjoy working on projects involving Python, Django, MySQL,<br />
+        and modern web technologies like HTML, CSS, JavaScript, and Bootstrap.
+      </p>
+      <div class="project-button">
+        <a href="#projects" class="btn">View All Projects</a>
+      </div>
+    </section>
+
+    {% comment %} About section {% endcomment %}
+    <!-- About Section -->
+    <section id="about" class="about-section animate-on-scroll">
+      <div class="container">
+        <h2 class="animate-on-scroll">About Me</h2>
+        <p class="animate-on-scroll">
+         I'm Swarnika Singh, a 2nd-year Information Technology student at Indira Gandhi Delhi Technical University for Women (IGDTUW), passionate about applying machine learning and data-driven techniques to solve real-world problems.
+
+Currently, I’m interning at DRDO–Scientific Analysis Group (SAG), working on network fingerprinting using the UNSW-NB15 dataset. I’m applying machine learning algorithms like Random Forest for network traffic classification and anomaly detection.
+        </p>
+              <p class="animate-on-scroll">
+Previously, I completed a summer internship at Center of Excellence in AI (COE-AI), IGDTUW, where I focused on model selection, evaluation, and optimization using Scikit-learn, NumPy, and Pandas.
+
+I’m highly motivated by opportunities to work on impactful technologies and constantly aim to deepen my expertise in AI, cybersecurity, and intelligent systems through hands-on experience and research.
+        </p>
+        
+        <div class=" mt-4 animate-on-scroll about-btn-wrapper">
+          <a
+            href="https://drive.google.com/file/d/1ZnaAwWCKC7KVc6dA9hX4sHqsTjpe1yPa/view?usp=sharing"
+            class="btn btn-primary btn-lg"
+            target="_blank"
+            download
+          >
+            Resume
+          </a>
+        </div>
+      </div>
+    </section>
+    {% comment %} skills section {% endcomment %}
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section animate-on-scroll">
+      <div class="container">
+        <h2 class="animate-on-scroll">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category animate-on-scroll">
+            <h3>Languages</h3>
+            <ul>
+              <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="24" /> C</li>
+      <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="24" /> C++</li>
+      <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="24" /> Python</li>
+
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Web Development</h3>
+            <ul>
+               <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="24" /> HTML</li>
+      <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="24" /> CSS</li>
+      <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="24" /> JavaScript</li>
+      <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="24" /> Bootstrap</li>
+      <li><img src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.6ea76c3f7e5a0cfe6c327fe6d41e548e.svg" width="24" /> Tailwind</li>
+
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Frameworks & Tools</h3>
+            <ul>
+             <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="24" /> Django</li>
+      <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="24" /> MySQL</li>
+      <li><img src="https://img.icons8.com/ios-filled/24/ffffff/wagtail.png" width="24" /> Wagtail</li> <!-- No official Devicon yet -->
+      <li><img src="https://img.icons8.com/fluency-systems-filled/24/ffffff/api.png" width="24" /> REST APIs</li>
+      <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="24" /> Git</li>
+      <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="24" /> GitHub</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Data & ML</h3>
+            <ul>
+               <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="24" /> NumPy</li>
+      <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="24" /> Pandas</li>
+      <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="24" /> Scikit-learn</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Interpersonal</h3>
+            <ul>
+              <li>Problem-Solving</li>
+              <li>Teamwork</li>
+              <li>Time Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% comment %} project setion {% endcomment %}
+
+    <!-- Project Section -->
+    <section id="projects" class="projects-section py-6 animate-on-scroll">
+      <div class="container">
+        <h2 class="text-center mb-4 animate-on-scroll">My Projects</h2>
+
+        <div
+          id="projectsCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#projectsCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Project 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#projectsCarousel"
+              data-bs-slide-to="1"
+              aria-label="Project 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#projectsCarousel"
+              data-bs-slide-to="2"
+              aria-label="Project 3"
+            ></button>
+          </div>
+
+          <div class="carousel-inner text-center">
+            <!-- Project 1 -->
+            <div class="carousel-item active">
+              <div class="p-4 project-card shadow rounded">
+                <h4>Generative AI for Drug Discovery</h4>
+                <p>
+                 Tools: Python, NumPy, Pandas, RDKit, Scikit-learn, Random Forest, KNN, Decision Tree <br>
+Dataset: pCHEMBL240 (ChEMBL bioactivity data)
+                </p>
+                <p>
+                  Developed machine learning models to predict drug-target bioactivity using the pCHEMBL240 dataset.
+                   Extracted molecular descriptors using RDKit and applied various regression algorithms, including Random
+                    Forest, KNN, and Decision Trees. The Random Forest Regressor achieved the best results with R² = 0.9526 
+                    and MAE = 0.3218. Conducted performance evaluation using MAE, MSE, RMSE, and R². Documented findings in a 
+                    research-style report and highlighted the potential for using generative AI techniques in future drug discovery
+                     pipelines.
+                </p>
+                <a href="https://github.com/swarnika03/Python-Machine-Learning-project" class="btn btn-primary btn-lg">View Project</a>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            {% comment %} <div class="carousel-item">
+              <div class="p-4 project-card shadow rounded">
+                <h4>MyWebNest</h4>
+                <p>
+                  Created a dynamic portfolio site using Django & Wagtail with a
+                  blog and contact system.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  non risus. Suspendisse lectus tortor, dignissim sit amet,
+                  adipiscing nec, ultricies sed, dolor. Cras elementum ultrices
+                  diam. Maecenas ligula massa, varius a, semper congue, euismod
+                  non, mi. Proin porttitor, orci nec nonummy molestie, enim est
+                  eleifend mi, non fermentum diam nisl sit amet erat.
+                </p>
+                <a href="#" class="btn btn-primary btn-lg">View Live</a>
+              </div>
+            </div> {% endcomment %}
+
+            <!-- Project 3 -->
+            <div class="carousel-item">
+              <div class="p-4 project-card shadow rounded">
+                <h4>Eduport – Educational Platform Prototype</h4>
+                <p>
+                  Designed a static educational platform with multiple pages and
+                  smooth navigation.
+                </p>
+                <p>
+                 Designed and developed a responsive front-end prototype for an educational platform 
+                 featuring 5+ interactive pages such as Courses, User Account, and Community Forum. 
+                 Implemented smooth navigation, dropdowns, and tab switching using JavaScript, focusing
+                  on clean UI, accessibility, and consistent design. Optimized layout and assets to reduce
+                   page load time by 30%, enhancing overall user experience. The prototype lays the foundation
+                    for future integration of backend features like authentication and course management.
+                </p>
+                <a href="https://github.com/swarnika03/Eduport-Prototype" class="btn btn-primary btn-lg">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#projectsCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#projectsCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    {% comment %} conatct me {% endcomment %}
+    <section id="contact" class="contact-section animate-on-scroll">
+      <div class="contact-container">
+        <h2 class="animate-on-scroll">Contact Me</h2>
+        <p class="animate-on-scroll">
+          Have a question or want to work together? Drop me a line!
+        </p>
+        <form method="post" action="" class="contact-form">
+          {% csrf_token %}
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="animate-on-scroll"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            required
+            class="animate-on-scroll"
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+            class="animate-on-scroll"
+          ></textarea>
+          <button type="submit" class="animate-on-scroll">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer-section">
+  <div class="container text-center">
+     <p><strong> Contact no:</strong> +91-8707692803</p>
+    <p>📧 swarnika070btit23@igdtuw.ac.in | pariswarnika@gmail.com</p>
+     <p>
+      <a href="https://github.com/swarnika03" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/swarnika-singh-628448292/" target="_blank">LinkedIn</a> |
+      <a href="https://leetcode.com/u/swarnika2937/" target="_blank">LeetCode</a> |
+      <a href="https://www.geeksforgeeks.org/user/pariswa7o67/" target="_blank">GFG</a> |
+      <a href="https://www.codechef.com/users/swarnika03" target="_blank">CodeChef</a>
+    </p>
+    <p>&copy; 2025 Swarnika Singh. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll(".animate-on-scroll");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target); // Optional: stops observing after first reveal
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
+
+        elements.forEach((el) => observer.observe(el));
+      });
+    </script>
+  </body>
+</html>
